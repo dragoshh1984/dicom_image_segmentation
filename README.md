@@ -1,2 +1,3 @@
-# dicom_image_segmentation
-DICOM Image Segmentation
+# DICOM Image Segmentation
+
+Solution for organ segmentation from DICOM images.
