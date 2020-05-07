@@ -5,13 +5,13 @@ Solution for organ segmentation from DICOM images.
 # Repository Structure
 
 1. ```src``` -> Code for the repo and folder for input and output.
-    * [Solution.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/Solution.py) : File to run the segmentation.
-    * [Segmentation.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/Segmentation.py) : File containing the segmentation methods.
-    * [DicomSegmentationData.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/DicomSegmentationData.py) : File containing image processing methods.
-    * [create_input_file.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/create_input_file.py) : Script used to create .in file from .png images.
-    * [utils.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/utils.py) : File containing visualisation methods.
-    * [config.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/config.py) : File containing the argparse setup for [Solution.py](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/src/Solution.py).
-2. [workspace.ipynb](https://gitlab.com/dragoshh1984/dicom-image-segmentation/-/blob/master/workspace.ipynb) : Notebook where all the experimenting was done.
+    * [Solution.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/Solution.py) : File to run the segmentation.
+    * [Segmentation.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/Segmentation.py) : File containing the segmentation methods.
+    * [DicomSegmentationData.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/DicomSegmentationData.py) : File containing image processing methods.
+    * [create_input_file.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/create_input_file.py) : Script used to create .in file from .png images.
+    * [utils.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/utils.py) : File containing visualisation methods.
+    * [config.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/config.py) : File containing the argparse setup for [Solution.py](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/src/Solution.py).
+2. [workspace.ipynb](https://github.com/dragoshh1984/dicom_image_segmentation/blob/master/workspace.ipynb) : Notebook where all the experimenting was done.
 
 # How to use
 
@@ -135,9 +135,9 @@ parameters.
 
 Random Walker, Graph Cuts.
 
-# Bonus task
+# Multiple organ selections
 
-For the bonus task I've used the marching squares method on the doctor's image
+I've used the marching squares method on the doctor's image
 in order to determine how many contours are found. Given that the image is
 binary, the contours are very easily found. If there is more than one organ 
 then more contours would be found.
@@ -148,8 +148,7 @@ dilations and save each filled contour on a different binary image.
 For each binary image with filled contour, I've grouped it with the same DICOM
 image and run the segmentation.
 
-At the end I've added altogether the solutions (made sure that each value greater
-than one would be one) and obtained the solution for multiple organ segmentation.
+At the end I've added altogether the solutions and obtained the solution for multiple organ segmentation.
 
 # Visualisation and Evaluation
 
